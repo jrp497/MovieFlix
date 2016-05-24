@@ -1,6 +1,218 @@
-.jay {
-    font-size: 500%;
-    color: darkred;
-    font-family: "Calibri";
-    background-color: cornflowerblue;
+* {margin:0;padding:0}
+
+html {
+    font-family: Arial;
+    overflow-x:hidden;
+    max-width: 100%;
+    background: black;
 }
+
+.header {
+
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    background-color:transparent;
+    line-height: 40px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.header.active {
+    background: black;
+    opacity: 0.75;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+.headerList{
+
+    width: 100%;
+    font-size: 110%;
+
+}
+
+
+.headerList>ul{
+    width: 60%;
+    float: left;
+   }
+
+.headerList> ul >li{
+    display: inline-block;
+    padding-right: 2%;
+    padding-left: 2%;
+
+
+}
+
+.movieflixLogo{
+
+    float: left;
+    width: 10%;
+    padding-left: 4%;
+    padding-right: 2%;
+}
+.movieflixLogo img{
+
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+
+.searchButton{
+    float: left;
+    margin-right: 2%;
+    width: 7%;
+}
+
+.searchButton button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 110%;
+
+}
+
+.notification{
+    float: left;
+    margin-right: 2%;
+    width: 2%;
+}
+
+.notification button{
+
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 110%;
+
+}
+
+
+.profile{
+    float: left;
+    margin-right: 2%;
+    width: 8%;
+
+}
+
+.profileIcon{
+    float: left;
+    margin-right: 5%;
+}
+
+.profileIcon img{
+    vertical-align: middle;
+
+}
+
+.profileLabel{
+    float: left;
+    margin-right: 5%;
+}
+
+
+
+
+
+
+.imageContent{
+
+    position: relative;
+}
+
+.imageContent #bgImage{
+    height: 800px;
+}
+
+.image #bgImage{
+    position: absolute;
+    width: 100%;
+}
+
+.content{
+    width: 40%;
+    position: absolute;
+    padding-left: 4%;
+
+}
+.content #detailsImage{
+    position: absolute;
+    top: 200px;
+}
+
+.content #releaseDate{
+    position: absolute;
+    top: 435px;
+    width: 100%;
+    color: white;
+    font-size: 2vw;
+}
+.content #movieDetails{
+    position: absolute;
+    top: 470px;
+    width: 100%;
+    color: white;
+    font-size: 1.5vw;
+}
+
+
+.continueWatching{
+    position: absolute;
+    padding-left: 4%;
+    width: 100%;
+}
+
+#continue  h2{
+
+    width: 100%;
+    margin-top: 700px;
+    color: #999999;
+    font-size: 1.5vw;
+}
+
+#popular  h2, #trending h2{
+
+    width: 100%;
+    color: #999999;
+    font-size: 1.5vw;
+}
+
+
+
+.footer{
+    position: absolute;
+    width:50%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 5%;
+}
+
+.footer ul{
+
+    width: 100%;
+    float: left;
+    font-size: 1.5vw;
+
+}
+
+.footer>ul>li {
+    display: inline-block;
+    color: #999999;
+    font-size: 1vw;
+    width: 20%;
+    padding: 2% 2% 2% 2%;
+}
+
+
+
+
+
