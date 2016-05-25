@@ -6,163 +6,156 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- main css -->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="cascadesheets/index.css">
     <!-- ajax -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <!-- bxSlider Javascript file -->
-    <script src="jquery.bxslider.min.js"></script>
+    <script src="javascripts/jquery.bxslider.min.js"></script>
     <!--main js -->
-    <script src="index.js"></script>
-
+    <script src="javascripts/index.js"></script>
     <!-- bxSlider CSS file -->
-    <link href="jquery.bxslider.css" rel="stylesheet" />
-
-
+    <link href="cascadesheets/jquery.bxslider.css" rel="stylesheet" />
 </head>
+
+
 <body>
-    <div>
+<div>
+    <div class="header">
+        <div class="headerList">
+            <div class="movieflixLogo">
+                <img src="http://i.imgur.com/XLV65gk.png">
+            </div>
+            <ul>
+                <li style="color: #950000">Browse</li>
+                <li>Kids</li>
+                <li>DVD</li>
+            </ul>
+            <div class="searchButton">
+                <button>
+                    <span><i class="fa fa-search"></i></span>
+                    <span><label>Search</label></span>
+                </button>
+            </div>
+            <div class="notification">
+                <button>
+                    <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+                </button>
+            </div>
+            <div class="profile">
 
-        <div class="header">
-            <div class="headerList">
-                <div class="movieflixLogo">
-                    <img src="http://i.imgur.com/XLV65gk.png">
+                <div class="profileIcon">
+                    <img src="https://secure.netflix.com/ffe/profiles/avatars_v2/32x32/PICON_027.png"/>
                 </div>
-                <ul>
-                    <li style="color: #950000">Browse</li>
-                    <li>Kids</li>
-                    <li>DVD</li>
-                </ul>
-                <div class="searchButton">
-                    <button>
-                        <span><i class="fa fa-search"></i></span>
-                        <span><label>Search</label></span>
-                    </button>
-                </div>
-                <div class="notification">
-                    <button>
-                        <span><i class="fa fa-bell-o" aria-hidden="true"></i></span>
-                    </button>
-                </div>
-                <div class="profile">
 
-                    <div class="profileIcon">
-                        <img src="https://secure.netflix.com/ffe/profiles/avatars_v2/32x32/PICON_027.png"/>
-                    </div>
-
-                    <div class="profileLabel">
-                        <label>Jay</label>
-                    </div>
+                <div class="profileLabel">
+                    <label>Jay</label>
                 </div>
             </div>
-
-
-
-
         </div>
 
-        <div class="imageContent">
-            <div class="image">
-                <img id="bgImage" src="https://scdn.nflximg.net/ipl/59168/1c96cdfb68cae046259b1b4d348c917ce7a229a1.webp"/>
-            </div>
 
-            <div class="content">
-                <h2 id="releaseDate"> Coming May 27 </h2>
-                <img id="detailsImage" src="https://scdn.nflximg.net/ipl/00913/eb1597e2d9f738a7facfa0a5ba70d23a6b1437ee.webp"/>
-                <h2 id="movieDetails"> A bank manager's life is turned upside down when an old friend tricks him into faking his own death and starting over.</h2>
-            </div>
-
-            <div class="continueWatching">
-
-                    <div id="continue">
-                        <h2>Continue watching for Jay</h2>
-                            <div style="margin-top: 10px;width: 92%">
-                                <div class="slider1" >
-                                    <div class="slide"><img src=images/image11.jpg></div>
-                                    <div class="slide"><img src=images/image2.jpg></div>
-                                    <div class="slide"><img src=images/image3.jpg></div>
-                                    <div class="slide"><img src=images/image4.jpg></div>
-                                    <div class="slide"><img src=images/image5.jpg></div>
-                                    <div class="slide"><img src=images/image6.jpg></div>
-                                    <div class="slide"><img src=images/image7.jpg></div>
-
-                                </div>
-                            </div>
-                    </div>
-
-                    <div id="popular">
-                        <h2>Popular on Movieflix</h2>
-                        <div style="margin-top: 10px;width: 92%">
-                            <div class="slider1" >
-                                <div class="slide"><img src=images/image1.jpg></div>
-                                <div class="slide"><img src=images/image6.jpg></div>
-                                <div class="slide"><img src=images/image7.jpg></div>
-                                <div class="slide"><img src=images/image8.jpg></div>
-                                <div class="slide"><img src=images/image9.jpg></div>
-                                <div class="slide"><img src=images/image10.jpg></div>
-                                <div class="slide"><img src=images/image1.jpg></div>
-                                <div class="slide"><img src=images/image11.jpg></div>
-                                <div class="slide"><img src=images/image1.jpg></div>
-                                <div class="slide"><img src=images/image2.jpg></div>
-                                <div class="slide"><img src=images/image3.jpg></div>
-                                <div class="slide"><img src=images/image4.jpg></div>
-                                <div class="slide"><img src=images/image5.jpg></div>
-                                <div class="slide"><img src=images/image6.jpg></div>
-                                <div class="slide"><img src=images/image7.jpg></div>
-                                <div class="slide"><img src=images/image3.jpg></div>
-                            </div>
-                        </div>
-                    </div>
-                <div id="trending">
-                    <h2>Trending Now</h2>
-                    <div style="margin-top: 10px;width: 92%">
-                        <div class="slider1" >
-                            <div class="slide"><img src=images/image9.jpg></div>
-                            <div class="slide"><img src=images/image10.jpg></div>
-                            <div class="slide"><img src=images/image1.jpg></div>
-                            <div class="slide"><img src=images/image11.jpg></div>
-                            <div class="slide"><img src=images/image3.jpg></div>
-                            <div class="slide"><img src=images/image9.jpg></div>
-                            <div class="slide"><img src=images/image10.jpg></div>
-                            <div class="slide"><img src=images/image1.jpg></div>
-                            <div class="slide"><img src=images/image2.jpg></div>
-                            <div class="slide"><img src=images/image3.jpg></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer">
-                    <ul>
-                        <li>
-                            <div>Audio Description</div>
-                        </li><li>
-                            <div>Help Center</div>
-                        </li><li>
-                            <div>Media Center</div>
-                        </li><li>
-                            <div>Investor Relations</div>
-                        </li><li>
-                            <div>Jobs</div>
-                        </li><li>
-                            <div>Terms Of Use</div>
-                        </li><li>
-                            <div>Privacy</div>
-                        </li><li>
-                            <div>Cookie Preferences</div>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-
-
-        </div>
 
 
     </div>
+
+    <div class="imageContent">
+        <div class="image">
+            <img id="bgImage" src="https://scdn.nflximg.net/ipl/04729/0d012abb860241659134a43c753da0dc49147247.webp"/>
+        </div>
+
+        <div class="content">
+            <h2 id="releaseDate"> Coming May 27 </h2>
+            <img id="detailsImage" src="https://scdn.nflximg.net/ipl/00913/eb1597e2d9f738a7facfa0a5ba70d23a6b1437ee.webp"/>
+            <h2 id="movieDetails"> A bank manager's life is turned upside down when an old friend tricks him into faking his own death and starting over.</h2>
+        </div>
+
+        <div class="continueWatching">
+
+            <div id="continue">
+                <h2>Continue watching for Jay</h2>
+                <div style="margin-top: 10px;width: 92%">
+                    <div class="slider1">
+                        <div class="item-box"><img src=images/image11.jpg></div>
+                        <div class="item-box"><img src=images/image2.jpg></div>
+                        <div class="item-box"><img src=images/image3.jpg></div>
+                        <div class="item-box"><img src=images/image4.jpg></div>
+                        <div class="item-box"><img src=images/image5.jpg></div>
+                        <div class="item-box"><img src=images/image6.jpg></div>
+                        <div class="item-box"><img src=images/image7.jpg></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="popular">
+                <h2>Popular on Movieflix</h2>
+                <div style="margin-top: 10px;width: 92%">
+                    <div class="slider1" >
+                        <div class="item-box"><img src=images/image1.jpg></div>
+                        <div class="item-box"><img src=images/image6.jpg></div>
+                        <div class="item-box"><img src=images/image7.jpg></div>
+                        <div class="item-box"><img src=images/image8.jpg></div>
+                        <div class="item-box"><img src=images/image9.jpg></div>
+                        <div class="item-box"><img src=images/image10.jpg></div>
+                        <div class="item-box"><img src=images/image1.jpg></div>
+                        <div class="item-box"><img src=images/image11.jpg></div>
+                        <div class="item-box"><img src=images/image1.jpg></div>
+                        <div class="item-box"><img src=images/image2.jpg></div>
+                        <div class="item-box"><img src=images/image3.jpg></div>
+                        <div class="item-box"><img src=images/image4.jpg></div>
+                        <div class="item-box"><img src=images/image5.jpg></div>
+                        <div class="item-box"><img src=images/image6.jpg></div>
+                        <div class="item-box"><img src=images/image7.jpg></div>
+                        <div class="item-box"><img src=images/image3.jpg></div>
+                    </div>
+                </div>
+            </div>
+            <div id="trending">
+                <h2>Trending Now</h2>
+                <div style="margin-top: 10px;width: 92%">
+                    <div class="slider1" >
+                        <div class="item-box"><img src=images/image9.jpg></div>
+                        <div class="item-box"><img src=images/image10.jpg></div>
+                        <div class="item-box"><img src=images/image1.jpg></div>
+                        <div class="item-box"><img src=images/image11.jpg></div>
+                        <div class="item-box"><img src=images/image3.jpg></div>
+                        <div class="item-box"><img src=images/image9.jpg></div>
+                        <div class="item-box"><img src=images/image10.jpg></div>
+                        <div class="item-box"><img src=images/image1.jpg></div>
+                        <div class="item-box"><img src=images/image2.jpg></div>
+                        <div class="item-box"><img src=images/image3.jpg></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <ul>
+                    <li>
+                        <div>Audio Description</div>
+                    </li><li>
+                    <div>Help Center</div>
+                </li><li>
+                    <div>Media Center</div>
+                </li><li>
+                    <div>Investor Relations</div>
+                </li><li>
+                    <div>Jobs</div>
+                </li><li>
+                    <div>Terms Of Use</div>
+                </li><li>
+                    <div>Privacy</div>
+                </li><li>
+                    <div>Cookie Preferences</div>
+                </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
